@@ -13,6 +13,7 @@ const { auth } = NextAuth(authConfig);
 // export const { auth: middleware } = NextAuth(authConfig)
 
 // NOTE: Here is where we check if the user is logged in
+// @ts-ignore
 export default auth((req) => {
     // req.auth
     // console.log(req.nextUrl.pathname)

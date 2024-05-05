@@ -47,7 +47,7 @@ export const Sidebar = async () => {
                     <ContextMenu key={device.id_device} >
                         <ContextMenuTrigger>
                             <Link href={`/dashboard/${device.id_device}`}  >
-                                <DeviceSidebar Name={device.name} />
+                                <DeviceSidebar Name={device.name } />
                             </Link>
                         </ContextMenuTrigger>
                         <ContextMenuContent className="">

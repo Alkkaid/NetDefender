@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 interface DeviceSidebarProps {
-    Name: string,
+    Name: string | null,
 }
 export const DeviceSidebar = ({
     Name,
