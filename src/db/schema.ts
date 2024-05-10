@@ -7,6 +7,8 @@ import {
     uuid,
     serial,
     boolean,
+    numeric,
+    real,
 } from "drizzle-orm/pg-core"
 import type { AdapterAccount } from "next-auth/adapters"
 
@@ -80,3 +82,11 @@ export const ports = pgTable("port", {
     id_dc: serial("id_dc").notNull()
     .references(() => devicesConnections.id_dc, {onDelete: "cascade"}),
 });
+export const pings = pgTable("ping", {
+    idPing: uuid("idPing").defaultRandom(),
+    date: timestamp("date").defaultNow(),
+    status: boolean("status"),
+    packets_lost: real("packetsLost").default(0),
+    latency: real("latency").default(0),
+    jitter: real("jitter").default(0),
+})
