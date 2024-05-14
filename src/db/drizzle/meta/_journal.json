@@ -57,6 +57,27 @@
       "when": 1714975865211,
       "tag": "0007_flashy_groot",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1715390108959,
+      "tag": "0008_rapid_killraven",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1715391849545,
+      "tag": "0009_whole_earthquake",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "5",
+      "when": 1715407922211,
+      "tag": "0010_even_queen_noir",
+      "breakpoints": true
     }
   ]
 }

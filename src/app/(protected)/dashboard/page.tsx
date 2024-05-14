@@ -2,6 +2,7 @@
 import { auth, signOut } from "@/auth";
 import { Button } from "@/components/ui/button";
 import { DeviceCard } from "../_components/dashboard/deviceCard";
+import { PingsDashboard } from "../_components/dashboard/pingsDashboard";
 import { getAllDevicesFromUser } from "@/data/device";
 import Link from 'next/link'
 
@@ -77,6 +78,13 @@ const DashboardPage = async () => {
                     </CardContent>
                 </Card>
             </section>
+            <div className="text-4xl font-semibold pt-4 pl-10">
+                Pings???
+            </div>
+            <div className="flex justify-center items-center">
+                <PingsDashboard/>
+
+            </div>
             <div className="text-4xl font-semibold pt-4 pl-10">
                 Devices
             </div>
