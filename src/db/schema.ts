@@ -56,7 +56,7 @@ export const users_devices = pgTable("users_devices", {
 export const devices = pgTable("device", {
     id_device: uuid("id_device").defaultRandom().primaryKey(),
     name: text("name"),
-    code: integer("code").notNull(),
+    code: text("code").notNull(),
     isCodeUsed: boolean("isCodeUsed").default(false),
     createdAt: timestamp("createdAt", { mode: "date" }).defaultNow(),
     updatedAt: timestamp("updatedAt", { mode: "date" }),
@@ -76,9 +76,9 @@ export const devicesConnections = pgTable("deviceConnection", {
 
 export const ports = pgTable("port", {
     id_port: serial("id_port").primaryKey(),
-    portName: text("portName").notNull(),
+    portName: text("portName"),
     portNumber: integer("portNumber").notNull(),
-    portType: text("portType").notNull(),
+    portType: text("portType"),
     id_dc: serial("id_dc").notNull()
     .references(() => devicesConnections.id_dc, {onDelete: "cascade"}),
 });
