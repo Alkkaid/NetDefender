@@ -5,7 +5,12 @@ import {io} from 'socket.io-client'
 import {pings } from '@/db/schema';
 
 export const PingsDashboard = () => {
-    const socket = io(process.env.SOCKET_URL || 'http://localhost:3001');
+    // const socket = io(process.env.SOCKET_URL || 'http://localhost:3001');
+    const SOCKET_URL = process.env.SOCKET_URL;
+    // const socket = io(SOCKET_URL as string);
+
+    // NOTE: CHANGE IN DEV
+    const socket = io("https://api.netdefender.cloud");
     const [data, setData] = useState<InferSelectModel<typeof pings>>()
     const jitter = data?.jitter;
     const latency = data?.latency;
