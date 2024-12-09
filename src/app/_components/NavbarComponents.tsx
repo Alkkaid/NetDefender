@@ -62,18 +62,6 @@ export const NavbarComponents = () => {
                 <NavigationMenu>
                     <NavigationMenuList>
                         <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Mision
-                                </NavigationMenuLink>
-                            </Link>
-                        </NavigationMenuItem>
-                        <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    Vision
-                                </NavigationMenuLink>
-                            </Link>
                             {/* <NavigationMenuTrigger>Getting started</NavigationMenuTrigger> */}
                             {/* <NavigationMenuContent> */}
                             {/*     <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]"> */}
@@ -89,30 +77,30 @@ export const NavbarComponents = () => {
                             {/*     </ul> */}
                             {/* </NavigationMenuContent> */}
                         </NavigationMenuItem>
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger>Valores</NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                                    {valores.map((component) => (
-                                        <ListItem
-                                            key={component.title}
-                                            title={component.title}
-                                            href={component.href}
-                                        >
-                                            {component.description}
-                                        </ListItem>
-                                    ))}
-                                </ul>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
+                        {/* <NavigationMenuItem> */}
+                        {/*     <NavigationMenuTrigger>Valores</NavigationMenuTrigger> */}
+                        {/*     <NavigationMenuContent> */}
+                        {/*         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] "> */}
+                        {/*             {valores.map((component) => ( */}
+                        {/*                 <ListItem */}
+                        {/*                     key={component.title} */}
+                        {/*                     title={component.title} */}
+                        {/*                     href={component.href} */}
+                        {/*                 > */}
+                        {/*                     {component.description} */}
+                        {/*                 </ListItem> */}
+                        {/*             ))} */}
+                        {/*         </ul> */}
+                        {/*     </NavigationMenuContent> */}
+                        {/* </NavigationMenuItem> */}
 
-                        <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    ¿Quienes Somos?
-                                </NavigationMenuLink>
-                            </Link>
-                        </NavigationMenuItem>
+                        {/* <NavigationMenuItem> */}
+                        {/*     <Link href="/" legacyBehavior passHref> */}
+                        {/*         <NavigationMenuLink className={navigationMenuTriggerStyle()}> */}
+                        {/*             ¿Quienes Somos? */}
+                        {/*         </NavigationMenuLink> */}
+                        {/*     </Link> */}
+                        {/* </NavigationMenuItem> */}
                     </NavigationMenuList>
                 </NavigationMenu>
 
