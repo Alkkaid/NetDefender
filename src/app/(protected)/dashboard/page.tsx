@@ -55,9 +55,9 @@ const DashboardPage = async () => {
                         <CardTitle className="text-4xl text-emerald-400">5</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <div className="text-xs text-muted-foreground">
-                            To-be implemented
-                        </div>
+                        {/* <div className="text-xs text-muted-foreground"> */}
+                        {/*     To-be implemented */}
+                        {/* </div> */}
                     </CardContent>
                 </Card>
                 <Card className="w-3/12 ">
@@ -71,15 +71,15 @@ const DashboardPage = async () => {
                         <CardDescription>Number of Ports Scanned</CardDescription>
                         <CardTitle className="text-4xl">641</CardTitle>
                     </CardHeader>
-                    <CardContent>
-                        <div className="text-xs text-muted-foreground">
-                            ?????
-                        </div>
-                    </CardContent>
+                    {/* <CardContent> */}
+                    {/*     <div className="text-xs text-muted-foreground"> */}
+                    {/*         ????? */}
+                    {/*     </div> */}
+                    {/* </CardContent> */}
                 </Card>
             </section>
             <div className="text-4xl font-semibold pt-4 pl-10">
-                Pings???
+                Pings
             </div>
             <div className="flex justify-center items-center">
                 <PingsDashboard/>
