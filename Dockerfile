@@ -20,8 +20,8 @@ COPY postcss.config.js .
 COPY drizzle.config.ts .
 
 RUN ["npm", "install"]
-RUN ["npm", "run", "build"]
-RUN ["npm", "run", "start"]
+# RUN ["npm", "run", "build"]
+# RUN ["npm", "run", "start"]
 
 # Next.js collects completely anonymous telemetry data about general usage. Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line to disable telemetry at run time
@@ -30,8 +30,8 @@ RUN ["npm", "run", "start"]
 # Note: Don't expose ports here, Compose will handle that for us
 
 # Start Next.js in development mode based on the preferred package manager
-# CMD \
-#   if [ -f package-lock.json ]; then npm run dev; \
-#   elif [ -f pnpm-lock.yaml ]; then pnpm dev; \
-#   else npm run dev; \
-#   fi
+CMD \
+  if [ -f package-lock.json ]; then npm run dev; \
+  elif [ -f pnpm-lock.yaml ]; then pnpm dev; \
+  else npm run dev; \
+  fi
